@@ -36,7 +36,7 @@
 - address : String
 - wishList: Advertisement[0...*]
 - preferences : String[0..*]
-- messages : string[0..*]
+- messages : integer[0..*]
 --
 + Login(String,Sting):void
 + Logout():void
@@ -93,7 +93,7 @@
       <x>640</x>
       <y>32</y>
       <w>344</w>
-      <h>192</h>
+      <h>224</h>
     </coordinates>
     <panel_attributes>Advertisement
 --
@@ -101,12 +101,13 @@
 - sellerId : integer
 - sellerName : string
 - sellerContact : integer
+- sellerEmail : string
 - category: String
 - website: Website
 - vehicle: Vehicle
-- datePosted: Date
+- datePosted: string
 - postedBy : Member
--isSold : bool
+- isSold : bool
 --
 + CreateAd(String, Website,Vehicle,Date,Member):integer
 + PostAd(Advertisement): integer
@@ -135,24 +136,24 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>464</x>
+      <x>456</x>
       <y>120</y>
-      <w>112</w>
-      <h>72</h>
+      <w>128</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Message
 --
+- messageId : integer
 - sender: Member
 - receiver: Member
-- text: string
-</panel_attributes>
+- text: string</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
       <x>648</x>
-      <y>296</y>
+      <y>336</y>
       <w>336</w>
       <h>160</h>
     </coordinates>
@@ -166,9 +167,9 @@
 - engine: integer
 - regNum: String
 --
-+CreateVehicle(String,String,String,String,String,String):integer
-+EditVehicle(integer):void
-+DeleteVehicle(integer):void
++ CreateVehicle(String,String,String,String,String,String):integer
++ EditVehicle(integer):void
++ DeleteVehicle(integer):void
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -176,29 +177,29 @@
     <id>Relation</id>
     <coordinates>
       <x>704</x>
-      <y>216</y>
+      <y>248</y>
       <w>80</w>
-      <h>96</h>
+      <h>104</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=1
 contains &gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>360</x>
       <y>136</y>
-      <w>120</w>
+      <w>112</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=0..*
 sends/receives &gt;</panel_attributes>
-    <additional_attributes>10.0;20.0;130.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -232,7 +233,7 @@ m2=1
     <id>UMLNote</id>
     <coordinates>
       <x>632</x>
-      <y>488</y>
+      <y>512</y>
       <w>104</w>
       <h>56</h>
     </coordinates>
@@ -244,13 +245,13 @@ bg=white</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>584</x>
-      <y>352</y>
-      <w>80</w>
-      <h>176</h>
+      <x>592</x>
+      <y>392</y>
+      <w>72</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;10.0;10.0;200.0;60.0;200.0</additional_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0;10.0;180.0;50.0;180.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
