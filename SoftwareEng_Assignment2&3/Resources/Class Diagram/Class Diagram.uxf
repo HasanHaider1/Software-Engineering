@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>80</x>
+      <y>8</y>
+      <w>328</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>User
+--
+- isLoggedIn : bool
+--
++ viewAd(): Advertisement[0..*]
++ searchAdFilters(String,String,float):Advertisement[0..*]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>48</x>
+      <y>272</y>
+      <w>328</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>Member
+--
+- id: String
+- password: String
+- name : String
+- dob : Date
+- contactNumber: Integer
+- emailAddress: String
+- address : String
+- wishList: Advertisement[0...*]
+- preferences : String[0..*]
+- messages : integer[0..*]
+--
++ Login(String,Sting):void
++ Logout():void
++ EditProfile():void
++ AddtoWishlist(integer): void
++ DeletefromWishlist(integer) : void
++ BrowseWishlist() : void
++ SendMessage(string,integer): bool
++ ViewMessages():void
++ SearchByPreferences(String[0..*]):Advertisement[0..*]
++ SetPreferences(String,String,Integer):void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>272</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>GuestUser
+--
+
+--
++ Signup():void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>152</y>
+      <w>120</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;130.0;50.0;130.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>232</x>
+      <y>152</y>
+      <w>128</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>140.0;10.0;140.0;50.0;10.0;50.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>24</y>
+      <w>344</w>
+      <h>224</h>
+    </coordinates>
+    <panel_attributes>Advertisement
+--
+- adNo: integer
+- sellerId : integer
+- sellerName : string
+- sellerContact : integer
+- sellerEmail : string
+- category: String
+- website: Website
+- vehicle: Vehicle
+- datePosted: string
+- postedBy : Member
+- isSold : bool
+--
++ CreateAd(String, Website,Vehicle,Date,Member):integer
++ PostAd(Advertisement): integer
++ UpdateAd(integer): void
++ DeleteAd(integer): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>240</y>
+      <w>136</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Website
+--
+- tag: string
+- url: string
+--
++ FetchFrom(): array[]
++ PostTo(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>496</x>
+      <y>112</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Message
+--
+- messageId : integer
+- sender: Member
+- receiver: Member
+- text: string</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>688</x>
+      <y>328</y>
+      <w>336</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Vehicle
+--
+- vehicleId : integer
+- name: String
+- model: String
+- color: String
+- picturePath: String
+- engine: integer
+- regNum: String
+--
++ CreateVehicle(String,String,String,String,String,String):integer
++ EditVehicle(integer):void
++ DeleteVehicle(integer):void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>240</y>
+      <w>80</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+contains &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>128</y>
+      <w>112</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..*
+sends/receives &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>400</x>
+      <y>72</y>
+      <w>296</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=0..*
+m2=0..*
+sees/searches for/ posts &gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;350.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>624</x>
+      <y>128</y>
+      <w>72</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*
+m2=1
+</panel_attributes>
+    <additional_attributes>10.0;140.0;10.0;10.0;70.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>672</x>
+      <y>504</y>
+      <w>104</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Path of the picture
+will be stored
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>632</x>
+      <y>384</y>
+      <w>72</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;10.0;10.0;180.0;50.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>472</x>
+      <y>392</y>
+      <w>128</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Crawler
+--
+- website : Website
+--
++Crawl():String[0..*]
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>392</x>
+      <y>504</y>
+      <w>232</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>Scrapper
+--
+
+--
++GetData(String[0..*]):String[0...*]
++RemoveDuplicates(String[0..*]):String[0..*]
++UpdateData(String[0..*]):String[0..*]
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>40</x>
+      <y>168</y>
+      <w>104</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>color, model, price 
+are the filters
+Keyword will be
+the search string
+the user uses to 
+search for some ad
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>56</x>
+      <y>56</y>
+      <w>40</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>568</x>
+      <y>320</y>
+      <w>24</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>568</x>
+      <y>464</y>
+      <w>24</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+</diagram>
