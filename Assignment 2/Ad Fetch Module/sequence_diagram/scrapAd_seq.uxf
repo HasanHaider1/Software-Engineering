@@ -16,7 +16,7 @@
     <id>UMLGeneric</id>
     <coordinates>
       <x>390</x>
-      <y>90</y>
+      <y>100</y>
       <w>130</w>
       <h>30</h>
     </coordinates>
@@ -27,7 +27,7 @@
     <id>Relation</id>
     <coordinates>
       <x>120</x>
-      <y>160</y>
+      <y>560</y>
       <w>30</w>
       <h>80</h>
     </coordinates>
@@ -38,12 +38,12 @@
     <id>Relation</id>
     <coordinates>
       <x>440</x>
-      <y>120</y>
+      <y>390</y>
       <w>30</w>
-      <h>530</h>
+      <h>260</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;510.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -75,7 +75,7 @@
       <w>290</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 Login to selected Websites
@@ -90,7 +90,7 @@ Login to selected Websites
       <w>230</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 scrap Ads from websites</panel_attributes>
@@ -104,7 +104,7 @@ scrap Ads from websites</panel_attributes>
       <w>520</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 Save Advertisements</panel_attributes>
@@ -118,7 +118,7 @@ Save Advertisements</panel_attributes>
       <w>520</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 Remove duplicate Advertisements</panel_attributes>
@@ -127,10 +127,10 @@ Remove duplicate Advertisements</panel_attributes>
   <element>
     <id>UMLGeneric</id>
     <coordinates>
-      <x>120</x>
-      <y>220</y>
+      <x>440</x>
+      <y>230</y>
       <w>20</w>
-      <h>360</h>
+      <h>170</h>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
@@ -138,13 +138,24 @@ Remove duplicate Advertisements</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>120</x>
-      <y>570</y>
+      <x>440</x>
+      <y>120</y>
       <w>30</w>
-      <h>70</h>
+      <h>130</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>690</x>
+      <y>560</y>
+      <w>30</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
   </element>
   <element>
     <id>UMLGeneric</id>
@@ -158,14 +169,25 @@ Remove duplicate Advertisements</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>120</x>
+      <y>230</y>
+      <w>20</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
     <id>Relation</id>
     <coordinates>
-      <x>690</x>
-      <y>560</y>
+      <x>120</x>
+      <y>150</y>
       <w>30</w>
-      <h>60</h>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
   </element>
 </diagram>

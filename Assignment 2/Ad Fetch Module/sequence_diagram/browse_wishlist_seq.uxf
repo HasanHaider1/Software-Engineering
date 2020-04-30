@@ -4,12 +4,12 @@
   <element>
     <id>UMLActor</id>
     <coordinates>
-      <x>40</x>
+      <x>30</x>
       <y>0</y>
-      <w>60</w>
+      <w>80</w>
       <h>110</h>
     </coordinates>
-    <panel_attributes>User</panel_attributes>
+    <panel_attributes>Member</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -49,12 +49,12 @@
     <id>Relation</id>
     <coordinates>
       <x>60</x>
-      <y>90</y>
+      <y>530</y>
       <w>30</w>
-      <h>680</h>
+      <h>240</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;660.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;220.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -86,7 +86,7 @@
       <w>200</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 click 
@@ -101,7 +101,7 @@ click
       <w>200</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 BrowseWishlist()</panel_attributes>
@@ -115,7 +115,7 @@ BrowseWishlist()</panel_attributes>
       <w>200</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 Fetch all Ads in
@@ -130,7 +130,7 @@ wishlist</panel_attributes>
       <w>200</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 select Advertisement</panel_attributes>
@@ -144,7 +144,7 @@ select Advertisement</panel_attributes>
       <w>200</w>
       <h>80</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 delete
@@ -159,7 +159,7 @@ delete
       <w>200</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 DeletefromWishlist(AdNo)</panel_attributes>
@@ -173,7 +173,7 @@ DeletefromWishlist(AdNo)</panel_attributes>
       <w>200</w>
       <h>60</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-
+    <panel_attributes>lt=&lt;&lt;-
 
 
 delete Advertisement</panel_attributes>
@@ -222,39 +222,6 @@ delete Advertisement</panel_attributes>
     </coordinates>
     <panel_attributes/>
     <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>710</x>
-      <y>210</y>
-      <w>20</w>
-      <h>140</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLGeneric</id>
-    <coordinates>
-      <x>710</x>
-      <y>590</y>
-      <w>20</w>
-      <h>60</h>
-    </coordinates>
-    <panel_attributes/>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>710</x>
-      <y>340</y>
-      <w>30</w>
-      <h>270</h>
-    </coordinates>
-    <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;250.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -338,6 +305,28 @@ Advertisements
   <element>
     <id>Relation</id>
     <coordinates>
+      <x>270</x>
+      <y>710</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>340</y>
+      <w>30</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
       <x>710</x>
       <y>640</y>
       <w>30</w>
@@ -347,14 +336,47 @@ Advertisements
     <additional_attributes>10.0;100.0;10.0;10.0</additional_attributes>
   </element>
   <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>710</x>
+      <y>590</y>
+      <w>20</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>710</x>
+      <y>210</y>
+      <w>20</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>60</x>
+      <y>130</y>
+      <w>20</w>
+      <h>410</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
     <id>Relation</id>
     <coordinates>
-      <x>270</x>
-      <y>710</y>
+      <x>60</x>
+      <y>90</y>
       <w>30</w>
       <h>60</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
   </element>
 </diagram>
